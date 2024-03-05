@@ -19,7 +19,7 @@ pipeline {
             steps {
                 sh 'echo "--> in deployment"' 
                 sh 'g++ _404.cpp -o output'
-                sh 'echo "--> deployed 🔥🚒" 
+                sh 'echo "--> deployed 🔥🚒" '
             }
         }
     }
