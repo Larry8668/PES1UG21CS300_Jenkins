@@ -10,7 +10,9 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh 'echo "--> in test"' 
+                sh 'echo "--> in test"'
+                sh 'echo "--> bound to fail here..."'
+                sh echo??
                 sh './output'
 
             }
