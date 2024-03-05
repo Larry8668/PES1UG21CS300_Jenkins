@@ -11,8 +11,6 @@ pipeline {
         stage('Test') { 
             steps {
                 sh 'echo "--> in test"'
-                sh 'echo "--> bound to fail here..."'
-                sh echo??
                 sh './output'
 
             }
@@ -20,7 +18,8 @@ pipeline {
         stage('Deploy') { 
             steps {
                 sh 'echo "--> in deployment"' 
-                sh 'echo "--> deployed 🔥🚒" '
+                sh 'g++ _404.cpp -o output'
+                sh 'echo "--> deployed 🔥🚒" 
             }
         }
     }
